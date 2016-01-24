@@ -13,3 +13,10 @@ navigate to root directory
 
     run 'java Driver' to play the game!
 
+### On Mac
+
+navigate to root directory
+
+	run `javac Driver.java`
+
+	run `java Driver`
