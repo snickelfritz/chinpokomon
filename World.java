@@ -5,6 +5,7 @@
    import java.io.*;
    import java.lang.*;
    import java.util.Scanner;
+   import pokemons.*;
 	/*
   * The World is the visual display of the character walking around his city
   * in Pokemon.  It also contains the menus for when a character enters his
@@ -141,101 +142,101 @@
       {
          switch(loc[x+pxw][y+pyw])
          {
-            case -2:world[x][y].setIcon(new ImageIcon("house14.jpg"));
+            case -2:world[x][y].setIcon(new ImageIcon("images/house14.jpg"));
                break;
-            case -1:world[x][y].setIcon(new ImageIcon("manhouse14.jpg"));
+            case -1:world[x][y].setIcon(new ImageIcon("images/manhouse14.jpg"));
                break;
-            case 0:world[x][y].setIcon(new ImageIcon("grass.jpg"));
+            case 0:world[x][y].setIcon(new ImageIcon("images/grass.jpg"));
                break;
             case 1: 
                if(up)
-                  world[x][y].setIcon(new ImageIcon("grassback.jpg"));
+                  world[x][y].setIcon(new ImageIcon("images/grassback.jpg"));
                if(down)
-                  world[x][y].setIcon(new ImageIcon("mangrass.jpg"));
+                  world[x][y].setIcon(new ImageIcon("images/mangrass.jpg"));
                if(left)
-                  world[x][y].setIcon(new ImageIcon("grassleft.jpg"));
+                  world[x][y].setIcon(new ImageIcon("images/grassleft.jpg"));
                if(right)
-                  world[x][y].setIcon(new ImageIcon("grassright.jpg"));
+                  world[x][y].setIcon(new ImageIcon("images/grassright.jpg"));
                break;
-            case 2:world[x][y].setIcon(new ImageIcon("field.jpg"));
+            case 2:world[x][y].setIcon(new ImageIcon("images/field.jpg"));
                break;
-            case 3:world[x][y].setIcon(new ImageIcon("manfield.jpg"));
+            case 3:world[x][y].setIcon(new ImageIcon("images/manfield.jpg"));
                if(up)
-                  world[x][y].setIcon(new ImageIcon("fieldback.jpg"));
+                  world[x][y].setIcon(new ImageIcon("images/fieldback.jpg"));
                if(down)
-                  world[x][y].setIcon(new ImageIcon("manfield.jpg"));
+                  world[x][y].setIcon(new ImageIcon("images/manfield.jpg"));
                if(left)
-                  world[x][y].setIcon(new ImageIcon("fieldleft.jpg"));
+                  world[x][y].setIcon(new ImageIcon("images/fieldleft.jpg"));
                if(right)
-                  world[x][y].setIcon(new ImageIcon("fieldright.jpg"));
+                  world[x][y].setIcon(new ImageIcon("images/fieldright.jpg"));
                break;
-            case 4:  world[x][y].setIcon(new ImageIcon("house14.jpg"));
+            case 4:  world[x][y].setIcon(new ImageIcon("images/house14.jpg"));
                break;
-            case 5:world[x][y].setIcon(new ImageIcon("manhouse14.jpg"));
+            case 5:world[x][y].setIcon(new ImageIcon("images/manhouse14.jpg"));
                break;
-            case 6:world[x][y].setIcon(new ImageIcon("house14.jpg"));
+            case 6:world[x][y].setIcon(new ImageIcon("images/house14.jpg"));
                break;
-            case 7:world[x][y].setIcon(new ImageIcon("manhouse14.jpg"));
+            case 7:world[x][y].setIcon(new ImageIcon("images/manhouse14.jpg"));
                break;
-            case 8:world[x][y].setIcon(new ImageIcon("house14.jpg"));
+            case 8:world[x][y].setIcon(new ImageIcon("images/house14.jpg"));
                break;
-            case 9:world[x][y].setIcon(new ImageIcon("manhouse14.jpg"));
+            case 9:world[x][y].setIcon(new ImageIcon("images/manhouse14.jpg"));
                break;
-            case 10:world[x][y].setIcon(new ImageIcon("tree.jpg"));
+            case 10:world[x][y].setIcon(new ImageIcon("images/tree.jpg"));
                break;
-            case 12:world[x][y].setIcon(new ImageIcon("sign.jpg"));
+            case 12:world[x][y].setIcon(new ImageIcon("images/sign.jpg"));
                break;
-            case 13:world[x][y].setIcon(new ImageIcon("house1.jpg"));
+            case 13:world[x][y].setIcon(new ImageIcon("images/house1.jpg"));
                break;
-            case 14:world[x][y].setIcon(new ImageIcon("house2.jpg"));
+            case 14:world[x][y].setIcon(new ImageIcon("images/house2.jpg"));
                break;
-            case 15:world[x][y].setIcon(new ImageIcon("house3.jpg"));
+            case 15:world[x][y].setIcon(new ImageIcon("images/house3.jpg"));
                break;
-            case 16:world[x][y].setIcon(new ImageIcon("house4.jpg"));
+            case 16:world[x][y].setIcon(new ImageIcon("images/house4.jpg"));
                break;
-            case 17:world[x][y].setIcon(new ImageIcon("house5.jpg"));
+            case 17:world[x][y].setIcon(new ImageIcon("images/house5.jpg"));
                break;
-            case 18:world[x][y].setIcon(new ImageIcon("house6.jpg"));
+            case 18:world[x][y].setIcon(new ImageIcon("images/house6.jpg"));
                break;
-            case 19:world[x][y].setIcon(new ImageIcon("house7.jpg"));
+            case 19:world[x][y].setIcon(new ImageIcon("images/house7.jpg"));
                break;
-            case 20:world[x][y].setIcon(new ImageIcon("house8.jpg"));
+            case 20:world[x][y].setIcon(new ImageIcon("images/house8.jpg"));
                break;
-            case 21:world[x][y].setIcon(new ImageIcon("house9.jpg"));
+            case 21:world[x][y].setIcon(new ImageIcon("images/house9.jpg"));
                break;
-            case 22:world[x][y].setIcon(new ImageIcon("house10.jpg"));
+            case 22:world[x][y].setIcon(new ImageIcon("images/house10.jpg"));
                break;
-            case 23:world[x][y].setIcon(new ImageIcon("house11.jpg"));
+            case 23:world[x][y].setIcon(new ImageIcon("images/house11.jpg"));
                break;
-            case 24:world[x][y].setIcon(new ImageIcon("house12.jpg"));
+            case 24:world[x][y].setIcon(new ImageIcon("images/house12.jpg"));
                break;
-            case 25:world[x][y].setIcon(new ImageIcon("house13.jpg"));
+            case 25:world[x][y].setIcon(new ImageIcon("images/house13.jpg"));
                break;
-            case 27:world[x][y].setIcon(new ImageIcon("house15.jpg"));
+            case 27:world[x][y].setIcon(new ImageIcon("images/house15.jpg"));
                break;
-            case 28:world[x][y].setIcon(new ImageIcon("house16.jpg"));
+            case 28:world[x][y].setIcon(new ImageIcon("images/house16.jpg"));
                break;
-            case 29:world[x][y].setIcon(new ImageIcon("mart1.jpg"));
+            case 29:world[x][y].setIcon(new ImageIcon("images/mart1.jpg"));
                break;
-            case 30:world[x][y].setIcon(new ImageIcon("mart2.jpg"));
+            case 30:world[x][y].setIcon(new ImageIcon("images/mart2.jpg"));
                break;
-            case 31:world[x][y].setIcon(new ImageIcon("mart3.jpg"));
+            case 31:world[x][y].setIcon(new ImageIcon("images/mart3.jpg"));
                break;
-            case 32:world[x][y].setIcon(new ImageIcon("mart4.jpg"));
+            case 32:world[x][y].setIcon(new ImageIcon("images/mart4.jpg"));
                break;
-            case 33:world[x][y].setIcon(new ImageIcon("heal1.jpg"));
+            case 33:world[x][y].setIcon(new ImageIcon("images/heal1.jpg"));
                break;
-            case 34:world[x][y].setIcon(new ImageIcon("heal2.jpg"));
+            case 34:world[x][y].setIcon(new ImageIcon("images/heal2.jpg"));
                break;
-            case 35:world[x][y].setIcon(new ImageIcon("white.jpg"));
+            case 35:world[x][y].setIcon(new ImageIcon("images/white.jpg"));
                break;
-            case 36:world[x][y].setIcon(new ImageIcon("gym1.jpg"));
+            case 36:world[x][y].setIcon(new ImageIcon("images/gym1.jpg"));
                break;
-            case 37:world[x][y].setIcon(new ImageIcon("gym2.jpg"));
+            case 37:world[x][y].setIcon(new ImageIcon("images/gym2.jpg"));
                break;
             case 38:
             case 39:
-            case 40:world[x][y].setIcon(new ImageIcon("sign.jpg"));
+            case 40:world[x][y].setIcon(new ImageIcon("images/sign.jpg"));
                break;
          } 
       }
@@ -445,7 +446,7 @@
        public void displayMart()
       {
          int item = 0;
-         Object[] possibleValues = { new ImageIcon("ball.jpg"), new ImageIcon("potion.jpg"), "Leave" };
+         Object[] possibleValues = { new ImageIcon("images/ball.jpg"), new ImageIcon("images/potion.jpg"), "Leave" };
          int choice = 0;
          choice = JOptionPane.showOptionDialog(this, 
                               "What would you like to buy?"+"\n You have $"+trainer.getCash(), "Pokemart", 
@@ -927,7 +928,7 @@
                {
                   if(x == 0 + count || y == 0 + count || x == 19 - count || y == 19 - count)
                   {
-                     world[x][y].setIcon(new ImageIcon("black.jpg"));
+                     world[x][y].setIcon(new ImageIcon("images/black.jpg"));
                   }
                }
             }

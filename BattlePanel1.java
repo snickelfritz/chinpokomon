@@ -4,6 +4,7 @@
    import java.awt.image.*;
    import java.awt.geom.*;
    import java.lang.*;
+   import pokemons.*;
   /***********************************************************************************
   * BattlePanel1 is the class responsible for any battles that take place in pokemon.
   * It takes care of all the animations for the battle, as well as communicating with

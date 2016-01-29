@@ -6,6 +6,7 @@
    import java.awt.event.*;
    import javax.swing.JOptionPane;
    import java.lang.*;
+   import pokemons.*;
 	/*****************************************************************************
 	* The trainer class is used to represent the user in the world of pokemon.
 	* They know how much cash they have, their name, their number of their various
@@ -97,7 +98,7 @@
 	*****************************************************************************/
        public void chooseStartingPokemon()
       {
-         Object[] possibleValues = {"Charmander (Level 1)", "Squirtle (Level 1)", "Bulbasaur (Level 1)"};
+         Object[] possibleValues = {"Charmander", "Squirtle", "Bulbasaur"};
       
          int choice = JOptionPane.showOptionDialog(bp, 
                            "Which pokemon do you want to start off with?", "Starting Pokemon", 
