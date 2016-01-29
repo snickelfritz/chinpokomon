@@ -9,7 +9,7 @@
       public int myLevel, mySpeed, myStrength, mySpecial, myDefense, myTotalHealth, myHealth, myExp;
       public String myName = "Rose";
       public String firstAttack = "Tell boring story";
-      public String secondAttack = "Be really unclear about quiz directions";
+      public String secondAttack = "Serve 40 Yen lunch";
       public int myNumber = 15;
    
    /***********************************************************************************
