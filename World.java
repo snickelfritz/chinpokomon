@@ -233,10 +233,8 @@
                break;
             case 37:world[x][y].setIcon(new ImageIcon("gym2.jpg"));
                break;
-            case 38:world[x][y].setIcon(new ImageIcon("sign.jpg"));
-               break;
-            case 39:world[x][y].setIcon(new ImageIcon("sign.jpg"));
-               break;
+            case 38:
+            case 39:
             case 40:world[x][y].setIcon(new ImageIcon("sign.jpg"));
                break;
          } 
@@ -354,9 +352,9 @@
                switch(choice2)
                {
                   case 0:
-                     a = new Bulbasaur(20 + z);
-                     b = new Wartortle(20 + z2);
-                     c = new Charizard(20 + z3);
+                     a = new Bulbasaur(25 + z);
+                     b = new Wartortle(25 + z2);
+                     c = new Charizard(25 + z3);
                      Trainer jeff = new Trainer(battle, "Jeff", a, b, c);
                      battle.commenceBattle(trainer, jeff);
                      break;
@@ -369,9 +367,9 @@
                      break;
                   case 2:
                   
-                     a = new Squirtle(20 + z);
-                     b = new Charmeleon(20 + z2);
-                     c = new Venusaur(20 + z3);
+                     a = new Squirtle(18 + z);
+                     b = new Charmeleon(18 + z2);
+                     c = new Venusaur(18 + z3);
                      Trainer will = new Trainer(battle, "Will", a, b, c);
                      battle.commenceBattle(trainer, will);
                      break;
