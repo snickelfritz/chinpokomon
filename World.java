@@ -81,11 +81,11 @@
          /*************************
    *A Timer to animate the start of a battle
    *************************/
-      public Timer m = new Timer(75, new intoBattle());
+      public Timer m = new Timer(5, new intoBattle());
          /*************************
    *a Timer to animate the end of a battle
    *************************/
-      public Timer n = new Timer(75, new outOfBattle());
+      public Timer n = new Timer(5, new outOfBattle());
    	/*************************
    * Creates a world and sends it the BattlePanel as an argument.
    * This allows for easier communication between the world and 
