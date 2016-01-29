@@ -437,6 +437,12 @@
             case 3:
                String k = JOptionPane.showInputDialog("What do you say?");
                JOptionPane.showMessageDialog(this, "Hey Mom, "+k);
+               if(k.equals("Please wait outside for 300 seconds.")) {
+                  if(trainer.getNumPokemon() < 6) {
+                     trainer.addPokemon(new Rose(20));
+                     JOptionPane.showMessageDialog(this, "You got Mr. Rose!");
+                  }
+               }
          }
          battle.score.update(trainer);
       }
